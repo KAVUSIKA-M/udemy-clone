@@ -92,6 +92,16 @@ body{
     border-radius: 30px;
     padding: 10px;
     color: white;
+    border:solid #9C49DF 1px ;
+    cursor: pointer;
+}
+
+.categories p:hover{
+    background-color: transparent;
+    border: solid #9C49DF 1px;
+    color: #9C49DF;
+    transition: 1s;
+
 }
 
 .sale__image{
@@ -111,6 +121,21 @@ body{
     position: absolute;
     top: 10%;
     left: 10%;
+    animation-name: zoom;
+    animation-duration: 2s;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
 }
 
 .course-card{
